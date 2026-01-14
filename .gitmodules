@@ -1,0 +1,6 @@
+[submodule "ITSEDGE2526"]
+	path = ITSEDGE2526
+	url = https://github.com/codeninja-it/ITSEDGE2526
+[submodule "Savyst"]
+	path = Savyst
+	url = https://github.com/AshifC99/Savyst
