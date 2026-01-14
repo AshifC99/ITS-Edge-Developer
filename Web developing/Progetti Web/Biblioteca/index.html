@@ -13,8 +13,10 @@
     <div id="libri"></div>
     <script>
         DisegnaTabella(cucina, "libri");
-
-
+        let titolo = document.getElementById("titolo");
+        let autore = document.getElementById("autore");
+        cucina.Add(new Libro(titolo.value, autore.value));
+        DisegnaTabella(cucina, "libri");
 
     </script>
 </body>
