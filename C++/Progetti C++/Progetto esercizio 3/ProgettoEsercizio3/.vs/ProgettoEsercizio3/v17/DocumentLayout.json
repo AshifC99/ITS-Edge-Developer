@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AshifChowdhury\\Documents\\Progetto esercizio 3\\ProgettoEsercizio3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07C0139F-359D-448D-9056-B0D6537D251B}|ProgettoEsercizio3\\ProgettoEsercizio3.vcxproj|C:\\Users\\AshifChowdhury\\Documents\\Progetto esercizio 3\\ProgettoEsercizio3\\ProgettoEsercizio3\\ProgettoEsercizio3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07C0139F-359D-448D-9056-B0D6537D251B}|ProgettoEsercizio3\\ProgettoEsercizio3.vcxproj|solutionrelative:ProgettoEsercizio3\\ProgettoEsercizio3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProgettoEsercizio3.cpp",
+              "DocumentMoniker": "C:\\Users\\AshifChowdhury\\Documents\\Progetto esercizio 3\\ProgettoEsercizio3\\ProgettoEsercizio3\\ProgettoEsercizio3.cpp",
+              "RelativeDocumentMoniker": "ProgettoEsercizio3\\ProgettoEsercizio3.cpp",
+              "ToolTip": "C:\\Users\\AshifChowdhury\\Documents\\Progetto esercizio 3\\ProgettoEsercizio3\\ProgettoEsercizio3\\ProgettoEsercizio3.cpp",
+              "RelativeToolTip": "ProgettoEsercizio3\\ProgettoEsercizio3.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-05T16:52:20.498Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

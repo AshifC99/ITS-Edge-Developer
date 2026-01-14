@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gioco dell'Oca</title>
+    <link rel="stylesheet" href="asset/stile.css" />
+</head>
+
+<body>
+
+    <h1>Gioco dell'Oca</h1> <br>
+    <p>Clicca sul pulsante tira per lanciare il dado!</p> <br>
+    <button onclick="Tiro()">Tira</button> <br> <br>
+    <button onclick="preparazione()">Ricomincia</button>
+    <table align="center" id="tabellaRisultati">
+        <thead>
+            <tr>
+                <td align="center"><strong>Utente</strong></td>
+                <td align="center"><strong>PC</strong></td>
+            </tr>
+        </thead>
+        <tbody id="corpoTabella">
+        </tbody>
+    </table>
+
+    <!-- Messaggio di stato (vittoria/sconfitta) -->
+    <p id="messaggio" style="text-align: center; font-weight: bold;"></p>
+
+    <!-- Overlay animazioni: fuochi d'artificio e pioggia di emoji -->
+    <div id="fx-fireworks" aria-hidden="true"></div>
+    <div id="fx-rain" aria-hidden="true"></div>
+
+    <script src="asset/gioco.js"> </script>
+
+</body>
+
+</html>

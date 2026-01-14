@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <!-- Titolo della pagina mostrato nella scheda del browser -->
+    <title>Tabelline!</title>
+    <!-- Impostazione della codifica dei caratteri (UTF-8) -->
+    <meta charset="UTF-8" />
+    <!-- Collegamento al foglio di stile principale (per la presentazione) -->
+    <link href="/Scheda/asset/stile.css" rel="stylesheet" />
+</head>
+
+<body bgcolor="black" text="white">
+    <!--
+        Corpo della pagina: attributi `bgcolor` e `text` sono usati qui
+        per semplicità. In produzione è preferibile usare CSS nel file
+        `asset/stile.css` invece degli attributi inline.
+    -->
+
+    <!-- Tabella per i campi di input: base e numero di ripetizioni -->
+    <table>
+        <tr>
+            <td>base</td>
+            <!-- campo per inserire la base delle tabelline -->
+            <td> <input type="number" id="base" /> </td>
+            <td>rep</td>
+            <!-- campo per inserire il numero di ripetizioni (non utilizzato dalla funzione attuale) -->
+            <td> <input type="number" id="ripetizioni" /> </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+
+<!-- Pulsante che invoca la funzione JavaScript `Tabelline` quando cliccato -->
+<button onclick="Tabelline();">Calcola!</button>
+
+<!-- Area di testo dove vengono scritti i risultati (come una lavagna) -->
+<textarea id="lavagna"> </textarea>
+
+
+<script>
+    /*
+        Blocco di codice esempio/commentato: funzione dimostrativa `skam`.
+        È tutto commentato perché serve solo come esempio di alert/confirm/prompt
+        e non fa parte della logica principale dell'applicazione.
+    */
+    /* function skam() {
+         var numero = 2;
+         numero = "due";
+
+         // mando un messaggio di secco al mio utente
+         alert("Hai vinto! sei il visitatore numero " + numero);
+
+         // chiedo se lo buole ottenere
+         var risposta = confirm("Vuoi ottenere un saco di soldi?");
+
+
+         if (risposta) {
+             var IBAN = prompt("Allora scrivi il tuo IBAN");
+             alert("Hai inserito l'IBAN: " + IBAN);
+         }
+
+         else {
+             alert("Peccato!");
+         }
+
+     }
+
+     skam();
+*/
+
+    // Funzione principale chiamata quando si clicca sul pulsante "Calcola!"
+    function Tabelline() {
+        // Recupera il valore del campo `base` (valore di input come stringa)
+        var base = document.getElementById("base").value;
+        // Recupera il valore delle ripetizioni (attualmente non usato nella logica)
+        var ripetizioni = document.getElementById("ripetizioni").value;
+
+        // Inizializza il contatore a 0
+        var contatore = 0;
+
+        // Calcola il risultato della moltiplicazione: base * contatore
+        // Nota: `base` è una stringa se non convertita; per sicurezza si potrebbe
+        // usare `Number(base)` o `parseInt(base, 10)` per assicurarsi una conversione numerica.
+        var risultato = base * contatore;
+
+        // Incrementa il contatore di 1 (ora contatore vale 1)
+        contatore = contatore + 1;
+
+        // Recupera la textarea `lavagna` dove appendere il risultato
+        var lavagna = document.getElementById("lavagna");
+
+        // Aggiunge (concatena) una nuova riga con la moltiplicazione sulla lavagna
+        // Esempio di output: "3 x 1 = 0"
+        lavagna.value += base + " x " + contatore + " = " + risultato + "\n";
+
+        // Nota sul comportamento attuale:
+        // - La funzione incrementa il contatore solo una volta e scrive un singolo risultato.
+        // - Se l'intento è stampare più righe (ad esempio le tabelline fino a `ripetizioni`),
+        //   bisognerebbe usare un ciclo `for` o `while` che itera e aggiorna `contatore`.
+    }
+</script>
+
+</body>
+
+</html>

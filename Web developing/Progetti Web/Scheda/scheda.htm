@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Scheda Campionamento</title>
+    <meta charset="UTF-8" />
+    <link href="/Scheda/asset/stile.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1>Scheda Pianta</h1>
+
+    <table>
+        <!-- Qui l'utente inserira' la tabella -->
+        <tr>
+            <td>Fila</td>
+            <td>
+                <input type="number" name="valore" min="0" max="15" step="0.01" />
+            </td>
+            <td>Numero: <input type="number" /> </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Mappa coming soon</td>
+        </tr>
+
+        <!-- Qua ci mettiamo una tendina valori -->
+        <tr>
+            <td>Stato</td>
+            <td colspan="3">
+                <select>
+                    <option value="1">morta</option>
+                    <option value="2">appassita</option>
+                    <option value="3">normale</option>
+                    <option value="4">buono</option>
+                </select> <br />
+                <input type="range" min="1" max="5" value="3" />
+            </td>
+        </tr>
+
+        <!-- prima che ci si confonda e' la data -->
+        <tr>
+            <td>Piantata: <input type="date" value="" /> </td>
+            <td colspan="3"></td>
+        </tr>
+
+        <!-- Qua ci mettiamo una tendina valori -->
+        <tr>
+            <td>Note</td>
+            <td colspan="3">
+                <textarea clos="50" rows="10" placeholder="Scrivi la tua nota">
+
+                </textarea>
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

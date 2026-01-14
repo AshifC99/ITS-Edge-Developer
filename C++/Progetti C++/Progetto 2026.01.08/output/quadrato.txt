@@ -1,0 +1,3 @@
+Lato del quadrato: 5
+Perimetro del quadrato: 20
+Area del quadrato: 25

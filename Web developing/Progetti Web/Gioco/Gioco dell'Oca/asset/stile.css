@@ -1,0 +1,232 @@
+/* ====== Stile base della pagina ====== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* carattere semplice e leggibile */
+    background: #f5f7fb;
+    /* grigio chiaro-azzurrino */
+    color: #222;
+    /* testo in grigio scuro */
+    margin: 0;
+    /* togli margine predefinito del browser */
+    padding: 24px;
+    /* spazio interno */
+}
+
+/* Contenitore centrale per tenere tutto ordinato */
+.contenitore {
+    max-width: 720px;
+    /* larghezza massima */
+    margin: 0 auto;
+    /* centra il contenitore */
+    background: #fff;
+    /* sfondo bianco per contrasto */
+    padding: 24px;
+    border-radius: 12px;
+    /* angoli arrotondati */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    /* ombra leggera */
+}
+
+
+
+/* ====== Titoli e paragrafi ====== */
+h1 {
+    text-align: center;
+    /* centrato */
+    color: #1f3a64;
+    /* blu scuro */
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #444;
+}
+
+/* ====== Pulsanti ====== */
+button {
+    background: #2e6fdf;
+    /* blu acceso */
+    color: white;
+    /* testo bianco */
+    border: none;
+    /* senza bordo */
+    padding: 10px 16px;
+    /* spazio interno */
+    margin: 6px;
+    /* spazio esterno tra pulsanti */
+    border-radius: 8px;
+    /* angoli arrotondati */
+    font-size: 16px;
+    cursor: pointer;
+    /* mano sul cursore */
+    transition: background 0.2s, transform 0.1s;
+    /* effetto morbido */
+}
+
+/* Effetti al passaggio del mouse e al click */
+button:hover {
+    background: #1f5bcb;
+    /* un po’ più scuro al passaggio */
+}
+
+button:active {
+    transform: translateY(1px);
+    /* si abbassa di 1px quando clicchi */
+}
+
+/* Variante visiva per separare i due pulsanti (opzionale) */
+button:nth-of-type(2) {
+    background: #6c757d;
+    /* grigio */
+}
+
+button:nth-of-type(2):hover {
+    background: #5a6268;
+}
+
+/* ====== Tabella ====== */
+table {
+    width: 100%;
+    /* usa tutta la larghezza del contenitore */
+    border-collapse: collapse;
+    /* bordi uniti, più pulito */
+    margin-top: 16px;
+}
+
+td {
+    border: 1px solid #d9e1f2;
+    /* bordo sottile */
+    padding: 10px;
+}
+
+/* Riga intestazione (Utente / PC) */
+tr:first-child td {
+    background: #e9f0ff;
+    /* azzurrino chiaro */
+    font-weight: bold;
+    /* grassetto */
+    color: #1f3a64;
+    text-align: center;
+    /* centra il testo */
+}
+
+/* Celle con gli input */
+input {
+    width: 100%;
+    /* l’input riempie la cella */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #cdd6ee;
+    border-radius: 6px;
+    box-sizing: border-box;
+    /* include il padding nella larghezza */
+}
+
+/* Stato focus (quando clicchi dentro l’input) */
+input:focus {
+    outline: none;
+    border-color: #2e6fdf;
+    /* bordo blu quando attivo */
+    box-shadow: 0 0 0 3px rgba(46, 111, 223, 0.15);
+}
+
+/* ====== Allineamenti ======
+   In HTML usi "align=center" sulla tabella e sulle celle.
+   È meglio evitare l'attributo align e usare il CSS.
+*/
+.center {
+    text-align: center;
+}
+
+/* ====== Responsive (facoltativo ma utile su telefono) ====== */
+@media (max-width: 520px) {
+    body {
+        padding: 12px;
+    }
+
+    .contenitore {
+        padding: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    /* pulsanti a tutta larghezza su schermi piccoli */
+}
+
+/* ====== Effetti animati (fuochi d'artificio e pioggia) ====== */
+#fx-fireworks,
+#fx-rain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#fx-fireworks {
+    display: none;
+}
+
+#fx-fireworks.show {
+    display: block;
+}
+
+#fx-rain {
+    display: none;
+}
+
+#fx-rain.show {
+    display: block;
+}
+
+/* Particelle fuochi d'artificio */
+#fx-fireworks .spark {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: burst 1.2s ease-out infinite;
+    opacity: 0;
+}
+
+@keyframes burst {
+    0% {
+        transform: translate(-50%, 50%) scale(0);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -200px) scale(1.6);
+        opacity: 0;
+    }
+}
+
+/* Pioggia di emoji tristi */
+#fx-rain .drop {
+    position: absolute;
+    top: -10%;
+    font-size: 28px;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110%);
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,50 @@
+Questionario 5 domande.
+(per identificare il disagio/situazione.)
+--
+sottoporre al target.
+--
+
+
+Dettaglio delle funzioni.
+--
+prototipo dell'app. (canva/PowerPoint)
+
+--------------------------------------------
+DETTAGLI FUNZIONI;
+
+
+Luce gas:
+
+PRIVATI
+Analisi gratuita della bolletta: Caricando la bolletta  il sistema calcola consumi e spesa energetica.
+Offerte personalizzate: Entro 24 ore ricevi le migliori proposte dai partner, basate sui tuoi consumi.
+Confronto trasparente: Puoi valutare offerte a prezzo fisso o indicizzato con dettagli su costi e risparmio stimato. 
+Costo per l’utente: Servizio gratuito; Switcho guadagna tramite commissione dal fornitore scelto.
+
+
+	  1) Si fa una valutazione iniziale per capire come migliorare queste prestazioni.
+	  2) Ricevi una mail con le migliori offerte studiate su misura per il cliente.	
+	  3) selezioni l'offerta sul sito e confermi, al resto ci pensa il venditore.
+
+AZIENDE
+Possiamo fare lo stesso ma offrendo dei servizi migliori.
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+
+Mutuo: 
+
+COME FUNZIONA
+
+Servizio gratuito di comparazione mutui (prima casa, seconda casa, surroga) con oltre 20 banche.
+Inserimento dati semplice e veloce.
+Calcolo immediato di preventivi.
+Supporto consulenziale fino all’attivazione.
+Tutto online, senza chiamate commerciali e senza costi.
+
+SERVIZI INCLUSIVI
+Richiesta preventivi per nuovi mutui e surroga.
+Gestione completa della burocrazia.
+
+
+Sei un esperto di sviluppo web (Person). Analizza tutta la cartella del progetto (Task). Il sito è per un'azienda di Comparazione tariffe delle utenze tipo: Luce, Gas, Internet. Presenta il codice e le spiegazioni in un formato a schede Index.php (Format).
+
+https://ashif-chowdhury.github.io/Savyst/index.html#/assicurazioni
