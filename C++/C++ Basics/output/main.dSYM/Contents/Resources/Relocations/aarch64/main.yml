@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ashif/Documents/C++ Basics/output/main'
+relocations:     []
+...
